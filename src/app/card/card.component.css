@@ -1,0 +1,45 @@
+.card {
+  box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  background-color: #191919;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__title {
+  color: white;
+  padding: 8px 0;
+}
+
+.card__title small {
+  opacity: 0.25;
+}
+
+.card__body {
+  background-color: #616161;
+  width: 90%;
+  height: 65%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+
+.card__stats__type {
+  margin-right: 4px;
+  color: rgb(44, 44, 44);
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #eed535;
+  padding: 5px;
+  border-radius: 8px;
+}
