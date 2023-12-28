@@ -11,9 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   name: string = 'Pikachu';
   number: string = '0025';
-  attributesTypes: string[] = ['Eletric', 'Fire'];
+  attributesTypes: string[] = ['Electric'];
   imageUrl: string =
-    'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png';
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png';
 
   ngOnInit(): void {}
 }

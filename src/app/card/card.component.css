@@ -7,24 +7,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.card__body {
+  background-color: #616161;
+  height: 65%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card__body img {
+  width: 100%;
 }
 
 .card__title {
   color: white;
   padding: 8px 0;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-size: 24px;
+  width: 100%;
 }
 
 .card__title small {
+  font-size: 16px;
   opacity: 0.25;
-}
-
-.card__body {
-  background-color: #616161;
-  width: 90%;
-  height: 65%;
-  border-radius: 8px;
-  margin-top: 15px;
 }
 
 .card__stats {
@@ -34,12 +44,16 @@
 }
 
 .card__stats__type {
+  font-size: 16px;
   margin-right: 4px;
-  color: rgb(44, 44, 44);
   width: 60px;
   text-align: center;
   font-weight: bold;
-  background-color: #eed535;
   padding: 5px;
   border-radius: 8px;
+}
+
+.Electric {
+  background-color: #eed535;
+  color: #212121;
 }

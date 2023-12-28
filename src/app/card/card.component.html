@@ -3,12 +3,15 @@
     <img src="{{ imageUrl }}" alt="pokemon" />
   </div>
   <div class="card__title">
+    <small>{{ number }}</small>
     <h3>{{ name }}</h3>
-    <small>N {{ number }}</small>
   </div>
 
   <div class="card__stats">
-    <span class="card__stats__type" *ngFor="let type of attributesTypes">
+    <span
+      class="card__stats__type {{ type }}"
+      *ngFor="let type of attributesTypes"
+    >
       {{ type }}</span
     >
   </div>
