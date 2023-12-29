@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { PokemonService } from '../services/pokemon.service';
-import { PokemonData } from '../models/pokemonData';
+import { PokemonService } from '../../services/pokemon.service';
+import { PokemonData } from '../../models/pokemonData';
 
 @Component({
   selector: 'app-card',
