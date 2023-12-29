@@ -1,18 +1,18 @@
 <div class="card">
   <div class="card__body">
-    <img src="{{ imageUrl }}" alt="pokemon" />
+    <img src="{{ pokemon?.sprites?.front_default }}" alt="pokemon" />
   </div>
   <div class="card__title">
-    <small>{{ number }}</small>
-    <h3>{{ name }}</h3>
+    <small>{{ pokemon?.id }}</small>
+    <h3>{{ pokemon?.name }}</h3>
   </div>
 
   <div class="card__stats">
     <span
-      class="card__stats__type {{ type }}"
-      *ngFor="let type of attributesTypes"
+      class="card__stats__type {{ item.type.name }}"
+      *ngFor="let item of pokemon?.types"
     >
-      {{ type }}</span
+      {{ item.type.name | uppercase }}</span
     >
   </div>
 </div>
