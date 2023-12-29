@@ -16,15 +16,21 @@ export class CardComponent implements OnInit {
   constructor(private service: PokemonService) {}
 
   ngOnInit(): void {
-    this.service.getPokemon('bulbasaur').subscribe({
+    this.getPokemon('bulbasaur');
+  }
+
+  getPokemon(searchName: string) {
+    this.service.getPokemon(searchName).subscribe({
       next: (res) => {
-        //console.log(res);
         this.pokemon = {
           id: res.id,
           name: res.name,
           sprites: res.sprites,
           types: res.types,
         };
+      },
+      error: (_e) => {
+        throw new Error('Not Found');
       },
     });
   }
