@@ -20,6 +20,9 @@ export class CardComponent implements OnInit {
   }
 
   getPokemon(searchName: string) {
+    if (!searchName) {
+      searchName = 'bulbasaur';
+    }
     this.service.getPokemon(searchName).subscribe({
       next: (res) => {
         this.pokemon = {
